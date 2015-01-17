@@ -1,0 +1,12 @@
+/*
+Theme Name: Wordpress101
+Theme URI: http://www.prototype-hacker.com
+Author: Mike Ko
+Author URI: http://www.matrixki.com/
+Description: This is a theme development tutorial
+Version: 1.0
+License: 2015
+*/
+
+@import url('../wordpress101/css/bootstrap.min.css');
+@import url('../wordpress101/css/main.css');
