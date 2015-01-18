@@ -25,5 +25,11 @@ function add_js_method() {
 }
 add_action( 'wp_enqueue_scripts', 'add_js_method' );
 
+/**** 
+*
+*	theme support post thumbnail
+*  
+****/
+add_theme_support( 'post-thumbnails' );
 
 ?>

@@ -33,6 +33,7 @@
 	display: none;
 	background: #000;
 	margin-top: 10px;
+	z-index: 99;
 }
 .header-right #menu-main-menu li.menu-item-has-children .sub-menu > li{
 	display: block;
@@ -60,4 +61,33 @@
 }
 #footer .footer-menu #menu-footer-menu li a{
 	color: #000;
+}
+
+/* post */
+.post-row{
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	border-bottom: 1px solid #bcbcbc;
+}
+.post-row .post-content a{
+	color: black;
+}
+.post-row .post-content h3{
+	font-weight: 700;
+	font-size: 25px;
+}
+.post-row .post-content .excerpt{
+	font-size: 18px;
+}
+.post-row .post-content .author{
+	color: #468c54;
+}
+.post-row .post-content .date{
+	color: #999;
+}
+
+.single-post > img{
+	width: 100%;
+	height: auto;
 }
