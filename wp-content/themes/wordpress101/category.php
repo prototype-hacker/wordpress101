@@ -17,10 +17,12 @@
 			$postThumbnail = wp_get_attachment_image_src($postThumbnailId);
 			$postThumbnailUrl = $postThumbnail[0];
 			$authorName = get_the_author_meta( 'display_name', $post->post_author );
+			$catArray = get_the_category( $post->ID );
+			// var_dump($catArray);
 		?>
 		<div class="col-md-12 post-row">		
-			<div class="col-md-2 post-img">
-				<img class="img-thumbnail" src="<?php echo $postThumbnailUrl; ?>">
+			<div class="col-md-2 no-padding post-img">
+				<img class="img-circle" src="<?php echo $postThumbnailUrl; ?>">
 			</div>
 			<div class="col-md-10 post-content">
 				<a href="<?php echo $post->guid; ?>">
@@ -29,6 +31,11 @@
 				<p class="excerpt"><?php echo $post->post_excerpt; ?></p>
 				<p class="author">作者: <?php echo $authorName; ?></p>
 				<p class="date"><?php echo $post->post_date; ?></p>
+				<div class="car-row">
+					<?php foreach($catArray as $cat): ?>
+						<span class="label label-default"><?php echo $cat->cat_name; ?></span>
+					<?php endforeach; ?>
+				</div>
 			</div>	
 		</div>
 	<?php endforeach; ?>

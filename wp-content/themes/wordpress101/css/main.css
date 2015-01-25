@@ -1,3 +1,8 @@
+.no-padding{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
 #header{
 	height: 80px;
 	border-bottom: 1px solid #bcbcbc;
@@ -70,12 +75,16 @@
 	padding-top: 30px;
 	border-bottom: 1px solid #bcbcbc;
 }
+.post-row:last-child{
+	border-bottom: none;
+}
 .post-row .post-content a{
 	color: black;
 }
 .post-row .post-content h3{
 	font-weight: 700;
 	font-size: 25px;
+	margin-top: 0px;
 }
 .post-row .post-content .excerpt{
 	font-size: 18px;
@@ -90,4 +99,30 @@
 .single-post > img{
 	width: 100%;
 	height: auto;
+}
+.single-post .img-title{
+	position: relative;
+}
+.single-post .img-title > h1{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: #000;
+	color: #fff;
+	margin: 0px;
+	padding: 30px;
+}
+.single-post .content{
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.single-post .content p{
+	font-size: 18px;
+}
+
+.page-template .content{
+	margin: 60px 0;
+}
+.page-template .gmap{
+	margin-bottom: 60px;
 }
